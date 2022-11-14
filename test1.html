@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<style>
+
+* {margin:0; padding:0;}
+
+img {vertical-align:bottom;}
+
+#btn1 { position:absolute; top:30px; left:540px; display:none;}
+
+#btn2 { position:absolute; top:30px; left:540px; }
+</style>
+</head>
+<body>
+  <div id="btn_bg">
+
+    <div id="btn1"><a href="http://www.naver.com"><img src="/images/image/alan.webp" /></a></div>
+    
+    <div id="btn2"><a href="http://www.naver.com"><img src="/images/image/alan2.webp" /></a></div>
+    
+    </div>
+    
+    <script>
+    
+    var logo = 1;
+    
+    t = setInterval(logoChg, 2000); // 1000 = 1초입니다.
+    
+    function logoChg(){
+    
+         if(logo==1){
+    
+      $("#btn1").fadeIn(1000);
+    
+      $("#btn2").fadeOut(1000);
+    
+      logo = 2;
+    
+      }else{
+    
+      $("#btn2").fadeIn(1000);
+    
+      $("#btn1").fadeOut(1000);
+    
+      logo = 1;
+    
+      }
+    
+    }
+    
+    </script>
+   
+  
+</body>
+</html>

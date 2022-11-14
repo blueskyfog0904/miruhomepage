@@ -1,0 +1,117 @@
+body, html{
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+
+body{
+  overflow: auto scroll;
+}
+.header{
+  width: 1280px;
+  margin: 0 auto;
+}
+.title{    
+  padding-top:50px
+}
+
+
+#navbar{
+  /* padding-left: 120px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px;
+  /* align-items: center; */
+}
+#navbar > div{
+  /* align-self: center; */
+}
+
+.menu > li > a{
+  display: block;
+  /* padding: 12px 100px; */
+
+}
+.menu>li{
+  float:left;
+}
+
+.menu{  
+  list-style: none;
+  justify-content: space-between;
+  padding: 40px 40px 40px 5px;
+  
+}
+.main{
+  width:1280px;
+  margin: 0 auto;
+  
+}
+.wrap{  
+  margin: 0 auto;  
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;  
+}
+div > article {
+  display: inline-block;
+  width: 300px;
+  height: 200px;  
+  margin: 40px 20px 40px 20px;  
+}
+/* img{  
+  max-width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  display: block;  
+} */
+
+.theme_name{
+  padding: 50px 0 0 150px;
+  
+}
+
+.theme_place{
+  padding: 50px 0 0 150px;
+}
+.theme_des{
+  padding: 50px 0 50px 150px;
+}
+.contact{
+  display: flex;
+}
+
+.contact1{
+  padding: 100px;
+  width: 400px;
+  height: 700px;
+}
+.top{
+  padding-left: 100px;
+}
+
+
+pre{
+
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+
+.slide1{
+  width: 950px;
+  height: 650px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}

@@ -1,0 +1,97 @@
+body{
+  padding: 50px;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
+
+}
+#header{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100px;
+  flex-grow: 1;
+  
+}
+
+.main_section_div{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#title{
+  display: block;
+  flex-grow: 1;
+  padding: 1em;
+
+  
+}
+
+#navbar > ul > li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex: 2, 2, auto;
+  justify-content: space-between;
+  align-self: baseline;
+
+}
+#navbar {
+  display: flex;
+  flex-grow : 1;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+
+
+#navbar > ul {
+  display: flex;
+  flex-grow : 1;
+  justify-content: space-between;
+
+}
+
+.main_section_div > ul{
+  display:flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.main_section_div > ul > img{
+  display:flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+
+#main_section{
+  height: auto;
+  width: 100%;
+  position: relative
+}
+
+.swiper {
+  width: 600px;
+  height: 400px;
+  margin:2em auto;
+  border:1px solid;
+  /* overflow: hidden; */
+  
+}
+
+.swiper-button-prev{
+  --swiper-theme-color: white
+  
+}
+.swiper-button-next{
+  --swiper-theme-color: white
+  
+}
+
+

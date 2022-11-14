@@ -1,0 +1,37 @@
+/* .container{
+  background: beige;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: column nowrap 
+  flex-flow 는 flex-direction과 wrap을 동시에 사용할 수 있음
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+} */
+.container{
+  padding-top:100px;
+  background: beige;
+  height: 100vh;
+  display: flex;
+}
+
+.item{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black
+}
+.item1{
+  background:red;  
+  flex: 2 2 auto; /*grow,shirnk,basis*/
+  align-self: center;
+}
+.item2{
+  background:orange;
+  
+}
+.item3{
+  background:purple;
+  
+}

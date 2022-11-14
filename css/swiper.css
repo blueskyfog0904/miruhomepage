@@ -1,0 +1,26 @@
+.swiper {
+  width: 600px;
+  height: 400px;
+  margin:2em auto;
+  border:1px solid;
+  /* overflow: hidden; */
+  
+}
+
+.swiper-button-prev{
+  --swiper-theme-color: white
+  
+}
+.swiper-button-next{
+  --swiper-theme-color: white
+  
+}
+/* .swiper li div{
+  position: absolute;
+  left: 50%; top:50%; transform:translate(-50%,-50%);
+
+} */
+
+li{
+  list-style: none;
+}
