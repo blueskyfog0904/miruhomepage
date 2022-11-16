@@ -1,6 +1,25 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "lightbox2": "^2.11.3"
-  }
+    "express": "^4.18.2",
+    "lightbox2": "^2.11.3",
+    "pm2": "^5.2.2"
+  },
+  "name": "miru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueskyfog0904/miruhomepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueskyfog0904/miruhomepage/issues"
+  },
+  "homepage": "https://github.com/blueskyfog0904/miruhomepage#readme",
+  "description": ""
 }

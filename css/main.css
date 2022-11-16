@@ -69,16 +69,23 @@ body{
   position:absolute;
   z-index: 1;
   background-color: white;
+  text-align: center;
 }
 .dropdown-content a{
   display: block;
   background-color: white;
-  min-width: 100px;
+  width: 300px;
   padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 3px;
+  text-align: center;
   
 }
 
 .dropdown:hover .dropdown-content{
   display: block;
+}
+
+.top{
+  padding-left: 400px;
 }

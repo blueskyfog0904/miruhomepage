@@ -17,8 +17,11 @@ body{
   margin: 0 auto;
 }
 .title{    
-  padding-top:50px
+  padding-top:50px;
+  padding-left:100px;
+  padding-bottom: 30px;
 }
+
 
 
 #navbar{
@@ -62,8 +65,9 @@ div > article {
   display: inline-block;
   width: 300px;
   height: 200px;  
-  margin: 40px 20px 40px 20px;  
+  margin: 40px 20px 100px 20px;
 }
+
 /* img{  
   max-width: 100%;
   margin: 0 auto;
@@ -92,8 +96,9 @@ div > article {
   width: 400px;
   height: 700px;
 }
+
 .top{
-  padding-left: 100px;
+  padding-left: 400px;
 }
 
 
@@ -114,4 +119,37 @@ pre{
   right: 0;
   top: 0;
   opacity: 0;
+}
+
+.dropdown{
+  position:relative;
+  display: inline-block;
+  width: 310px;
+  text-align: center;
+}
+.dropbtn{
+  width: 310px;
+  text-align: center;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+}
+.dropdown-content a{
+  display: block;
+  background-color: white;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  text-align: center;
+  
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }

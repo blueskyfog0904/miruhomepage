@@ -18,22 +18,31 @@
 
 </style>
 <body>    
-    <header class="header">
-      <h1 class="title">MIRU</h1>
-      <nav id="navbar">        
-          <div style="text-align:center; width:25%;"><a href="#">WORK</a></div>
-          <div style="text-align:center; width:25%;"><a href="#">BIOGRAPHY</a></div>
-          <div style="text-align:center; width:25%;"><a href="#">STUDIO</a></div>
-          <div style="text-align:center; width:25%;"><a href="#">CONTACT</a></div>
-        </ul>
-      </nav>
-    </header>
+  <header class="header">
+    <a href="main.html"><h1 class="title">MIRU</h1></a>
+    <nav id="navbar" href="#">
+      <div class="dropdown">
+        <div class="dropbtn" width:25%;><a href="">WORK</a></div>
+        <div class="dropdown-content">
+          <a href="">art1</a>
+          <a href="">art2</a>
+          <a href="">art3</a>
+          <a href="">art4</a>
+        </div>
+      </div>
+        <div style="text-align:center; width:25%;"><a href="biography.html">BIOGRAPHY</a></div>
+        <div style="text-align:center; width:25%;"><a href="">STUDIO</a></div>
+        <div style="text-align:center; width:25%;"><a href="contact.html">CONTACT</a></div>
+      </ul>
+    </nav>
+    <br><br>
+  </header>
     <main class="main">
       <div class="theme_name">Theme Name</div>      
       <div class="theme_place">Theme place</div>
       <div class="theme_des">Theme description</div>
       <div class="wrap">
-        <article><img src="/images/image/flower.jpg"></article>
+        <article><a href="/work/project1/page_flower.html"><img src="/images/image/flower.jpg"></a></article>
         <article><img src="/images/image/flower.jpg"></article>
         <article><img src="/images/image/flower.jpg"></article>
         <article><img src="/images/image/flower.jpg"></article>
@@ -54,27 +63,29 @@
 
 
   
-    <!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted">
+     <!-- Footer -->
+    
+<footer class="text-center text-lg-start bg-white text-muted" >
   <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-   
-    </div>
+  <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" > -->   
+    <br><br>
+    <div style="background-color:#dcdcdc;">      
+    <br>
+    <a href="#" ><div class="top">↑ TOP </div><BR></a>
+    <br>    
     <!-- Right -->
   </section>
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
+  <section class="" >
+    <div class="container text-center text-md-start mt-5" >
       <!-- Grid row -->
       <div class="row mt-3">
-        <a href="#"><div>↑ TOP </div><BR></a>
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            
             <i class="fa-brands fa-instagram fa-5x"></i>
           </h6>
           <p>
@@ -111,13 +122,9 @@
   <!-- Copyright -->
 
   <!-- Copyright -->
+</div>
 </footer>
-<!-- Footer -->
-
-
-    
-
-    
+<!-- Footer -->    
   
     <script type="text/javascript" src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
