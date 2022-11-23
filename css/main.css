@@ -41,7 +41,6 @@ body{
 }
 
 
-
 .slide1{
   width: 950px;
   height: 650px;  
@@ -88,4 +87,46 @@ body{
 
 .top{
   padding-left: 400px;
+}
+
+/* work page에 사용되는 CSS */
+.wrap{  
+  margin: 0 auto;  
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;  
+}
+
+div > article {
+  display: inline-block;
+  width: 300px;
+  height: 200px;  
+  margin: 40px 20px 100px 20px;
+}
+
+.theme_name{
+  padding: 50px 0 0 150px;  
+}
+
+.theme_place{
+  padding: 50px 0 0 150px;
+}
+.theme_des{
+  padding: 50px 0 50px 150px;
+}
+
+pre{
+
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.contact{
+  display: flex;
+}
+
+.contact1{
+  padding: 100px;
+  width: 400px;
+  height: 700px;
 }

@@ -1,0 +1,182 @@
+body, html{
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+
+body{
+  overflow: auto scroll;
+}
+.header{
+  width: 1280px;
+  margin: 0 auto;
+}
+.title{    
+  padding-top:50px;
+  padding-left:100px;
+  padding-bottom: 30px;
+}
+
+
+#navbar{  
+  /* padding-left: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 20px;
+  /* align-items: center; */
+}
+
+
+
+.main{
+  width:1280px;
+  margin: 0 auto;
+  
+}
+
+
+.slide1{
+  width: 950px;
+  height: 650px;  
+  margin: auto;
+  overflow: auto;  
+  position:absolute;
+  text-align: center;
+  left:50%;
+  transform:translate(-50%, 0);
+  
+}
+.dropdown{
+  position:relative;
+  display: inline-block;
+  width: 310px;
+  text-align: center;
+}
+.dropbtn{
+  width: 310px;
+  text-align: center;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+}
+.dropdown-content a{
+  display: block;
+  background-color: white;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  text-align: center;
+  
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.top{
+  padding-left: 400px;
+}
+
+/* work page에 사용되는 CSS */
+.wrap{  
+  margin: 0 auto;  
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;  
+}
+
+div > article {
+  display: inline-block;
+  width: 300px;
+  height: 200px;  
+  margin: 40px 20px 40px 20px;
+}
+
+.theme_name{
+  padding: 50px 0 0 150px;  
+}
+
+.theme_place{
+  padding: 50px 0 0 150px;
+}
+.theme_des{
+  padding: 50px 0 50px 150px;
+}
+
+pre{
+
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.contact{
+  display: flex;
+}
+
+.contact1{
+  padding: 100px;
+  width: 400px;
+  height: 700px;
+}
+
+.imggrid{
+
+  max-width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  display: block;  
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
+}
+.imgsingle{
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  right: 0;
+  top: 0;
+}
+
+.btn-close{
+  float:right;  
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+  padding: 3em;
+  
+}
+.form_biography{
+  margin-left: 50px;
+}
+.form_work_mkdir{
+  margin-left: 50px;
+}
+
+textarea{
+  resize: both
+}
+
+.work_description{
+  margin-left: 150px;
+}
