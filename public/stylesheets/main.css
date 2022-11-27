@@ -8,6 +8,22 @@ a{
   text-decoration: none;
   color:black
 }
+a:link{
+  text-decoration: none;
+  color:black
+}
+a:hover{
+  text-decoration: none;
+  color:black
+}
+a:visited{
+  text-decoration: none;
+  color:black
+}
+a:active{
+  text-decoration: none;
+  color:black
+}
 
 body{
   overflow: auto scroll;
@@ -63,7 +79,7 @@ body{
   text-align: center;
 }
 
-.dropdown-content{
+.dropdown-content{  
   display:none;
   position:absolute;
   z-index: 1;
@@ -147,8 +163,8 @@ pre{
   margin: 0 auto;  
 }
 .imgsingle{
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 1080px;
+  max-height: 720px;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -179,4 +195,72 @@ textarea{
 
 .work_description{
   margin-left: 150px;
+}
+
+.delete_project{
+  border:0 solid black;
+  background-color: white;
+  margin-left: 150px;
+}
+
+/* 바이오 그래피쪽 */
+
+#aboutPre{
+  display: flex;
+  flex-direction: row;
+}
+#aboutPre1{
+  width: 50%;
+  padding-right: 50px;
+}
+#aboutPre2{
+  width: 50%;
+  padding-left: 50px;
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+}
+#contactleft{
+  width: 50%;
+  padding-right: 50px;
+  text-align: center;
+}
+#contactright{
+  width: 50%;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.contactform{
+  margin: 4px 0;
+  padding: 8px;
+  width: 400px;
+}
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+.repreimg{
+  width: 600px;
+  height: 400px;
+}
+
+
+.studiomain{
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.studiodes{
+  display: flex;
+  align-items: flex-end;
 }

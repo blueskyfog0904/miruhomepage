@@ -14,6 +14,9 @@ const FileStore = require('session-file-store')(session);
 
 const indexRouter = require('./routes/index.js');
 const workRouter = require('./routes/work.js');
+const aboutRouter = require('./routes/about.js')
+const studioRouter = require('./routes/studio.js')
+
 const { request } = require('http');
 
 // app.use(express.static('public'))
@@ -22,6 +25,9 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(compression());
 
 // app.use(helmet());
+
+// app.engine('html', requre('ejs').renderFile);
+// app.set('view engine', 'html')
 
 app.use(session({
   secret:'keyboard cat',
@@ -37,9 +43,25 @@ app.get('*', function(request,response,next){
   })
 })
 
+app.get('*', function(request,response,next){
+  fs.readdir('./public/about/', function(err, aboutlist){
+    request.aboutlist = aboutlist;
+    next();
+  })
+})
+
+app.get('*', function(request,response,next){
+  fs.readdir('./public/studio/', function(err, stulist){
+    request.studiolist = stulist;
+    next();
+  })
+})
+
 
 app.use('/', indexRouter);
 app.use('/work', workRouter);
+app.use('/about', aboutRouter)
+app.use('/studio', studioRouter);
 
 
 app.listen(3000);
