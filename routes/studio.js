@@ -185,7 +185,7 @@ router.get('/:pageId/project/:pageId2', function(request,response,next){
                   <div id="imgSlide">        
                     ${imageList}        
                   </div>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                   <div class="wrap">
                     ${pageimgList}
                     
@@ -226,7 +226,7 @@ ${description}
                   <div id="imgSlide">        
                     ${imageList}        
                   </div>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                   <div class="wrap">
                     ${pageimgList}
                     

@@ -1,41 +1,59 @@
 body, html{
   height: 100%;
+  font-family:"helvetica";
+  
+  font-size:12px;
+  
+  font-weight:10;
+  
+  text-transform:none;
+  
+  color: gray;
 }
 html{
   scroll-behavior: smooth;
 }
 a{
   text-decoration: none;
-  color:black
+  color: gray;
 }
 a:link{
   text-decoration: none;
-  color:black
+  color:gray;
 }
 a:hover{
   text-decoration: none;
-  color:black
+  color:gray;
 }
 a:visited{
   text-decoration: none;
-  color:black
+  color:gray;
 }
 a:active{
   text-decoration: none;
-  color:black
+  color:gray;
 }
 
 body{
   overflow: auto scroll;
 }
 .header{
-  width: 1280px;
+  width: 1040px;
   margin: 0 auto;
 }
 .title{    
   padding-top:50px;
-  padding-left:100px;
-  padding-bottom: 30px;
+  padding-left:15px;
+  
+  font-family:"helvetica";
+  font-size:19px;
+  
+  font-weight:10;
+  
+  text-transform:none;
+  letter-spacing: 2px;
+  
+  color: rgb(145, 144, 144)
 }
 
 
@@ -58,8 +76,8 @@ body{
 
 
 .slide1{
-  width: 950px;
-  height: 650px;  
+  width: 1280px;
+  height: 853px;  
   margin: auto;
   overflow: auto;  
   position:absolute;
@@ -76,7 +94,15 @@ body{
 }
 .dropbtn{
   width: 310px;
-  text-align: center;
+  text-align: left;
+  color: gray;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.contactmenu{
+  letter-spacing: 2px;
+  text-align: left;
 }
 
 .dropdown-content{  
@@ -84,7 +110,12 @@ body{
   position:absolute;
   z-index: 1;
   background-color: white;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  text-indent: 5px;
+  font-size: 11px;
+  
 }
 .dropdown-content a{
   display: block;
@@ -93,7 +124,7 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 3px;
-  text-align: center;
+  text-align: left;
   
 }
 
@@ -102,7 +133,7 @@ body{
 }
 
 .top{
-  padding-left: 400px;
+  padding-left: 200px;
 }
 
 /* work page에 사용되는 CSS */
@@ -135,6 +166,15 @@ pre{
 
   overflow: auto;
   white-space: pre-wrap;
+  font-family:"helvetica";
+  
+  font-size:12px;
+  
+  font-weight:10;
+  
+  text-transform:none;
+  
+  color: gray;
 }
 
 .contact{
@@ -195,6 +235,7 @@ textarea{
 
 .work_description{
   margin-left: 150px;
+  font-size: 14px;
 }
 
 .delete_project{
@@ -264,3 +305,4 @@ label {
   display: flex;
   align-items: flex-end;
 }
+
