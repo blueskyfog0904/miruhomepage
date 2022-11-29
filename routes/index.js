@@ -75,22 +75,31 @@ router.get('/slideshow/upload', function(request, response){
 
 })
 
-
+router.post('/contact/update_process', function(request, response){
+  var desc = request.body.description;
+  fs.writeFile(path.join(__dirname, `../public/contact/description`), desc, 'utf8', function(err){
+    response.redirect('/contact')
+  })
+})
 
 
 router.get('/contact', function(request,response){
   if(request.session.user){
-    var body=
+    fs.readFile(path.join(__dirname, `../public/contact/description`), 'utf8', function(err, description){
+      var body=
     `
     <main class="main">
+
+    <form action="/contact/update_process" method="post" style="display:inline">
+      <textarea name="description" cols="70" rows="10" placeholder="please input contact content">${description}</textarea><br>
+      <input type="submit" value="update">
+    </form>
+    <br><br><br>    
+
       <div id="contact">
       <div id="contactleft">
         <pre>
-pleaes contact me this number.
-thank you!
-blah
-blah
-blah
+${description}
         </pre>
         </div>
         <div id="contactright">
@@ -113,8 +122,11 @@ blah
     var studiolist = template.studiolist(request.studiolist);    
     var html = template.htmlLogin(list, studiolist, body);
     response.send(html);
+    })
+    
 
   } else{
+    fs.readFile(path.join(__dirname, `../public/contact/description`), 'utf8', function(err, description){
     var body=
     `
     <main class="main">
@@ -148,7 +160,7 @@ blah
     var studiolist = template.studiolist(request.studiolist);    
     var html = template.html(list, studiolist, body);
     response.send(html);
-
+    })
   }
 })
 
@@ -336,6 +348,7 @@ router.get('/', function(request, response){
       
     </main>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <a href="/slideshow" style="display:block; margin-left:200px">update slide show</a>
   `;
     var list=template.list(request.list);    
@@ -357,6 +370,7 @@ router.get('/', function(request, response){
         
     </main>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   `;
   var list=template.list(request.list);    
     var studiolist = template.studiolist(request.studiolist);    

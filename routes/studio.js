@@ -122,6 +122,7 @@ router.post('/delete_process2', function(request, response, next){
   var id2 = request.body.id2;
   fs.rmdir(path.join(__dirname, `../public/studio/${id1}/project/${id2}`), {recursive: true},function(err){
     response.redirect(`/studio/${id1}`)
+    fs.unlink(path.join(__dirname, `../public/studio/${id1}/repre_img/${id2}.png`))
   })
 })
 router.post('/update_processtwo', function(request, response, next){
@@ -177,13 +178,14 @@ router.get('/:pageId/project/:pageId2', function(request,response,next){
                   <form action="/studio/delete_process2" method="post" style="display:inline">
                     <input type="hidden" name="id1" value="${id1}">
                     <input type="hidden" name="id2" value="${id2}">
+                    
                     <input class="delete_project" type="submit" value="delete">
                   </form>
                   <br><br><br>                 
                   <div id="imgSlide">        
                     ${imageList}        
                   </div>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                   <div class="wrap">
                     ${pageimgList}
                     
@@ -224,7 +226,7 @@ ${description}
                   <div id="imgSlide">        
                     ${imageList}        
                   </div>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                   <div class="wrap">
                     ${pageimgList}
                     
@@ -285,7 +287,9 @@ ${description}
     fs.readFile(path.join(__dirname, `../public/studio/${id}/description/${id}`), 'utf8', function(err, description){
       fs.readdir(path.join(__dirname, `../public/studio/${id}/repre_img/`), function(err, imglist){
         fs.readdir(path.join(__dirname, `../public/studio/${id}/project/`), function(err, projectlist){
-          
+          console.log(id)
+          console.log(imglist)
+          console.log(projectlist)
           var procontent = template.studioprojectlist(id, projectlist, imglist)
           var body=
           `
@@ -374,7 +378,8 @@ router.get('/create/:pageId', function(request,response){
       
       
       <input type="file" name="imgfile" accept="image/*" required/>
-      <= Same ImageFilename with ProjectName(Show representative Image for Project)!!
+      <= Same ImageFilename with ProjectName(Show representative Image for Project)!! Must use only .png type image
+
       <br>
       <input type="submit" value="create">
     </form>

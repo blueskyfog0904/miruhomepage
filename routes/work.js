@@ -65,11 +65,11 @@ router.get('/create/:pageId', function(request, response){
     <form action="/work/create_process" method="post" enctype="multipart/form-data">
       <input type="hidden" name="id" value="${id}">
       <input type="text" name="pageName" placeholder="FileName for page">
-      <= Same Filename with ImageFilename!!<br>
+      <= Same Filename with ImageFilename!! ex) 001_filename<br>
       <input type="text" name="pageTitle" placeholder="Title for page"><br>
       <textarea name="description" cols="150" rows="10" placeholder="description"></textarea><br>      
       <input type="file" name="imgfile" accept="image/*" required/>
-      <= Same ImageFilename with Filename!!
+      <= Same ImageFilename with Filename!! ex)001_filename
       <br>
       <input type="submit" value="create">
     </form>
@@ -163,6 +163,8 @@ router.get('/:pageId', function(request,response,next){
                     ${imageList}        
                   </div>
                   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br>
                   <div class="wrap">
                     ${pageimgList}
                     
@@ -201,6 +203,8 @@ ${description}
                   ${imageList}        
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <br><br><br>
                 <div class="wrap">
                   ${pageimgList}
                   

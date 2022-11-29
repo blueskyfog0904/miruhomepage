@@ -111,13 +111,13 @@ router.get('/cv', function(request, response){
           `          
           <main class="main">
           <form action='/about/cv_process' method='post' class='form_biography'>
-            Biography Left<br><textarea name="explain" cols="150" rows="10">${biographyExplain}</textarea><br>
-            Biography Right<br><textarea name="history" cols="150" rows="10">${biographyHistory}</textarea><br>
+            CV Left<br><textarea name="explain" cols="150" rows="10">${biographyExplain}</textarea><br>
+            CV Right<br><textarea name="history" cols="150" rows="10">${biographyHistory}</textarea><br>
             <input type="submit" value="update"></input>
           </form>
           <br><br>
           <div class="biography">
-                  <h5 class="subtitle">Biography</h5>
+                  <h5 class="subtitle">CV</h5>
                   <br><br><br><br><br>
                   <div id="aboutPre">
                   <pre id="aboutPre1">
@@ -149,7 +149,7 @@ ${biographyHistory}
             `
             <main class="main">
                 <div class="biography">
-                  <h5 class="subtitle">Biography</h5>
+                  <h5 class="subtitle">CV</h5>
                   <br><br><br><br><br>
                   <div id="aboutPre">
                   <pre id="aboutPre1">
